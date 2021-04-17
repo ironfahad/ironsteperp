@@ -25,13 +25,13 @@ $tb_pref_counter = 1;
 $db_connections = array (
   0 => 
   array (
-    'name' => 'Onemounlded Furniture',
+    'name' => 'Mussa Plastics',
     'host' => 'localhost',
     'port' => '',
-    'dbname' => 'onemouldedadmin_one11',
+    'dbname' => 'bloo_ninTechUnicon',
     'collation' => 'utf8_xx',
     'tbpref' => '0_',
-    'dbuser' => 'onemouldedadmin_one11user',
-    'dbpassword' => 'Titanium4411',
+    'dbuser' => 'bloo_unionTintechitech',
+    'dbpassword' => 'SyntechX213eS',
   ),
 );

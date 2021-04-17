@@ -5,12 +5,12 @@ Login attempts info.
 $login_faillog = array (
   0 => 
   array (
-    '::1' => 0,
+    '111.119.187.36' => 0,
     'last' => '',
   ),
   1 => 
   array (
-    '39.35.210.9' => 0,
+    '39.34.142.39' => 0,
     'last' => '',
   ),
   2 => 

@@ -150,7 +150,7 @@
 		$this->row = $iline1 - $this->lineHeight;
 		$this->fontSize -= 4;
 		$this->Text($ccol, $Addr1['title'], $icol);
-		//$this->Text($mcol, $Addr2['title']);
+		$this->Text($mcol, $Addr2['title']);
 		$this->fontSize += 4;
 
 // address1
@@ -160,10 +160,10 @@
 		$this->TextWrapLines($ccol, $icol - $ccol, $Addr1['address']);
 
 // address2
-// 		$this->row = $temp;
-// 		$this->Text($mcol, $Addr2['name']);
-// 		$this->NewLine();
-// 		$this->TextWrapLines($mcol, $this->rightMargin - $mcol, $Addr2['address'], 'left', 0, 0, NULL, 1);
+ 		$this->row = $temp;
+ 		$this->Text($mcol, $Addr2['name']);
+ 		$this->NewLine();
+		$this->TextWrapLines($mcol, $this->rightMargin - $mcol, $Addr2['address'], 'left', 0, 0, NULL, 1);
 
 		// Auxiliary document information
 		$col = $this->leftMargin;
