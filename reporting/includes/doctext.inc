@@ -153,6 +153,46 @@
 		_("Unit"), _("Price"), _(""), _("Total"));
 			break;
 
+//////////////////////////
+case ST_SALESINVOICE1234:
+			$this->title = $this->formData['prepaid']=='partial' ? _("PREPAYMENT INVOICE")
+				: ($this->formData['prepaid']=='final' ? _("FINAL INVOICE")  : _("INVOICE"));
+			$this->formData['document_name'] =_("Invoice No.");
+			$this->formData['domicile'] = $this->company['domicile'];
+			$Footer[0] = _("Please quote Invoice no. when paying. All amounts stated in"). " - " . $this->formData['curr_code'];
+
+			$deliveries = get_sales_parent_numbers(ST_SALESINVOICE, $this->formData['trans_no']);
+			if ($SysPrefs->print_invoice_no() == 0)
+			{
+				foreach($deliveries as $n => $delivery) {
+					$deliveries[$n] = get_reference(ST_CUSTDELIVERY, $delivery);
+				}
+			}
+			$aux_info = array(
+				_("Customer's Reference") => $this->formData["customer_ref"],
+				_("Sales Person") => get_salesman_name($this->formData['salesman']),
+				_("Your VAT no.") => $this->formData['tax_id'],
+			);
+			if ($this->formData['prepaid']=='partial')
+			{
+				$aux_info[_("Date of Payment")] = sql2date(get_oldest_payment_date($this->formData['trans_no']));
+				$aux_info[_("Our Order No")]  = $this->formData['order_'];
+			} else {
+				if ($this->formData['prepaid'] =='final')
+					$aux_info[_("Invoice Date")] = sql2date($this->formData['tran_date']);
+				else
+					$aux_info[_("Date of Sale")] = sql2date(get_oldest_delivery_date($this->formData['trans_no']));
+				$aux_info[_("Due Date")]  = sql2date($this->formData['due_date']);
+			}
+			$this->headers = array(_(""), _(""), _(""),
+		_(""), _(""), _(""), _(""));
+			break;
+
+
+
+
+
+
 		case ST_SUPPAYMENT:
 			global $systypes_array;
 

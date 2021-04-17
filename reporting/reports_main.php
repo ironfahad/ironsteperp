@@ -116,6 +116,16 @@ $reports->addReport(RC_CUSTOMER, 107, _('Print &Invoices'),
 			_('Customer') => 'CUSTOMERS_NO_FILTER',
 			_('Orientation') => 'ORIENTATION'
 ));
+$reports->addReport(RC_CUSTOMER, 1071, _('Print &Invoices Slip'),
+	array(	_('From') => 'INVOICE',
+			_('To') => 'INVOICE',
+			_('Currency Filter') => 'CURRENCY',
+			_('email Customers') => 'YES_NO',
+			_('Payment Link') => 'PAYMENT_LINK',
+			_('Comments') => 'TEXTBOX',
+			_('Customer') => 'CUSTOMERS_NO_FILTER',
+			_('Orientation') => 'ORIENTATION'
+));
 $reports->addReport(RC_CUSTOMER, 113, _('Print &Credit Notes'),
 	array(	_('From') => 'CREDIT',
 			_('To') => 'CREDIT',

@@ -74,6 +74,25 @@ function print_document_link($doc_no, $link_text, $link=true, $type_no,
 			if ($rep == 107)
 				$ar['PARAM_7'] = $def_orientation;
 			break;
+            
+            
+		case ST_SALESINVOICE2 : 
+			$rep = 1071;
+			// from, to, currency, email, paylink, comments, orientation
+			$ar = array(
+				'PARAM_0' => $doc_no, 
+				'PARAM_1' => $doc_no, 
+				'PARAM_2' => '', 
+				'PARAM_3' => $email, 
+				'PARAM_4' => '',
+				'PARAM_5' => '', 
+				'PARAM_6' => $rep == 107 ? '' : $def_orientation);
+			if ($rep == 107)
+				$ar['PARAM_7'] = $def_orientation;
+			break;
+            
+            
+            
 		case ST_PURCHORDER :
 			$rep = 209;
 			// from, to, currency, email, comments, orientation

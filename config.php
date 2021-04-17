@@ -39,7 +39,7 @@ if (!isset($path_to_root) || isset($_GET['path_to_root']) || isset($_POST['path_
 //  else{
 //       $go_debug= 0;
 //  }
-	//$go_debug 		= 0;	// set to 1 for basic debugging, or 2 to see also backtrace after failure.
+	$go_debug 		=0;	// set to 1 for basic debugging, or 2 to see also backtrace after failure.
 	$pdf_debug 		= 0;	// display pdf source instead reports for debugging when $go_debug!=0
 	// set $sql_trail to 1 only if you want to perform bugtracking sql trail
 	// Warning: this produces huge amount of data in sql_trail table.

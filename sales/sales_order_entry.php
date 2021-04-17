@@ -228,6 +228,9 @@ if (isset($_GET['AddedID'])) {
 	submenu_view(_("&View This Invoice"), ST_SALESINVOICE, $invoice);
 
 	submenu_print(_("&Print Sales Invoice"), ST_SALESINVOICE, $invoice."-".ST_SALESINVOICE, 'prtopt');
+	
+	submenu_print(_("&Print Sales Invoice Slip"), ST_SALESINVOICE2, $invoice."-".ST_SALESINVOICE, 'prtopt');
+	
 	submenu_print(_("&Email Sales Invoice"), ST_SALESINVOICE, $invoice."-".ST_SALESINVOICE, null, 1);
 	set_focus('prtopt');
 

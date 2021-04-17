@@ -180,6 +180,12 @@ class FrontReport extends Cpdf
 				  }
 			  }
 			  break;
+              case 'POS3':
+			  {
+		  		  $this->pageWidth=220.6;//175.6
+				  $this->pageHeight=842;			  
+			  }
+			  break;
 		   case 'LEGAL':
 			  // Portrait
 		  	  if ($orientation == 'P')
@@ -471,7 +477,25 @@ class FrontReport extends Cpdf
 
 		$this->row = $temp;
 	}
+function Header10()
+	{
+		global $dflt_lang; // FIXME should be passed as params
 
+		$this->SetLang(@$this->formData['rep_lang'] ? $this->formData['rep_lang'] : $dflt_lang);
+		$doctype = $this->formData['doctype'];
+		$header2type = true;
+
+		$lang = user_language();
+		$this->SetLang(@$this->formData['rep_lang'] ? $this->formData['rep_lang']
+ 			: ( $lang ? $lang : $dflt_lang));
+
+ 		 // leave layout files names without path to enable including
+ 		 // modified versions from company/x/reporting directory
+		include("includes/doctext.inc");
+		include("includes/header10.inc");
+
+		$this->row = $temp;
+	}
 	// Alternate header style which also supports a simple footer
 	function Header3()
 	{
