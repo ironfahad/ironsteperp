@@ -25,13 +25,13 @@ $tb_pref_counter = 1;
 $db_connections = array (
   0 => 
   array (
-    'name' => 'Ironstep ERP Local',
+    'name' => 'Onemounlded Furniture',
     'host' => 'localhost',
     'port' => '',
-    'dbname' => 'chuntechdatabase',
+    'dbname' => 'onemouldedadmin_one11',
     'collation' => 'utf8_xx',
     'tbpref' => '0_',
-    'dbuser' => 'fahad',
-    'dbpassword' => 'zoomtech2021',
+    'dbuser' => 'onemouldedadmin_one11user',
+    'dbpassword' => 'Titanium4411',
   ),
 );
