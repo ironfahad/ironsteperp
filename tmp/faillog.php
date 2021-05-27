@@ -5,7 +5,7 @@ Login attempts info.
 $login_faillog = array (
   0 => 
   array (
-    '::1' => 0,
+    '182.187.99.63' => 0,
     'last' => '',
   ),
   1 => 
