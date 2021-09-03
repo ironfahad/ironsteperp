@@ -1,0 +1,12 @@
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:33:[before upgrade] mysqli_connect(): (HY000/1045): Access denied for user 'Enter DB User Here'@'localhost' (using password: YES)
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:35:[before upgrade] mysqli_select_db() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:150:[before upgrade] mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:150:[before upgrade] mysqli_real_escape_string() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:68:[before upgrade] mysqli_query() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:69:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:165:[before upgrade] mysqli_errno() expects parameter 1 to be mysqli, bool given
+[03-Sep-2021 07:39:24 Asia/Karachi] 0::connect_db_mysqli.inc:127:[before upgrade] mysqli_num_rows() expects parameter 1 to be mysqli_result, null given

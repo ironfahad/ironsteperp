@@ -28,10 +28,10 @@ $db_connections = array (
     'name' => 'Mussa Plastisc ERP',
     'host' => 'localhost',
     'port' => '',
-    'dbname' => 'Enter DB Name Here',
+    'dbname' => 'bloo_rominatexh21',
     'collation' => 'utf8_xx',
     'tbpref' => '0_',
-    'dbuser' => 'Enter DB User Here',
-    'dbpassword' => 'Enter Db Password Here',
+    'dbuser' => 'nerojitechromiX',
+    'dbpassword' => 'prominatechX21Asd',
   ),
 );
